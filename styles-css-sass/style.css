@@ -1,0 +1,752 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 30px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.title-bgb {
+  color: #FFFFFF;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 42px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.text {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+button {
+  background-color: #00f3bb;
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 0px;
+}
+
+button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+.menu a:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+
+.menu a:active {
+  color: #060A24;
+  opacity: 56%;
+  text-decoration: line-through;
+}
+
+.presentation .title {
+  font-size: "IBM Plex Sans", sans-serif;
+}
+
+.presentation .title h1:first-child {
+  display: inline;
+}
+
+.presentation .title h1:nth-child(2) {
+  display: inline;
+  text-decoration: line-through;
+}
+
+.presentation .title h1:nth-child(3) {
+  display: inline;
+}
+
+.presentation .title h1:last-child {
+  display: inline;
+}
+
+iframe {
+  width: 100%;
+  height: 232px;
+  border: 0px;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    width: 320px;
+    max-width: 320px;
+  }
+  .title {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .title-bgb {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  button {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  header {
+    max-width: 320px;
+  }
+  header .logo {
+    margin-left: 16px;
+    margin-top: 14px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  header .bars-menu {
+    display: block;
+    margin-right: 16px;
+    margin-top: 14px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  header #btn-menu {
+    display: none;
+  }
+  header .menu {
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    margin-top: -100%;
+    padding-top: 16px;
+    background-color: #0000EC;
+  }
+  header .menu ul li {
+    margin-bottom: 24px;
+    margin-left: 16px;
+  }
+  header .menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  header .close-menu {
+    display: none;
+  }
+  header #btn-menu:checked ~ .menu {
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    top: 44px;
+  }
+  header input:checked ~ .close-menu {
+    display: block;
+    margin-right: 16px;
+    margin-top: 14px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  header input:checked ~ .bars-menu {
+    display: none;
+  }
+  .presentation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 303px;
+    margin-top: 29px;
+    margin-bottom: 24px;
+  }
+  .presentation .title {
+    margin-bottom: 16px;
+  }
+  .presentation .text {
+    margin-bottom: 36px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .presentation button {
+    margin-bottom: 24px;
+    width: 288px;
+    height: 48px;
+  }
+  .episodes {
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+            clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+    width: 100%;
+    max-width: 320px;
+    height: 1203.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .episodes .title-bgb {
+    margin-top: 64px;
+    margin-bottom: 21px;
+    width: 157px;
+    height: 42px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .episodes .player {
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-bottom: 11px;
+  }
+  .episodes .player iframe {
+    width: 298px;
+  }
+  .wwcf {
+    max-width: 320px;
+  }
+  .wwcf img {
+    position: relative;
+    z-index: 99;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 27px;
+    margin-top: -52px;
+    width: 320px;
+    height: 519px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .wwcf .title {
+    margin-bottom: 8px;
+  }
+  .wwcf .text {
+    margin-bottom: 54px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .guests {
+    margin-bottom: 48px;
+  }
+  .guests .title {
+    width: 288px;
+    height: 88px;
+    margin-bottom: 14px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .guests img {
+    width: 320px;
+    height: 243px;
+  }
+  .guests .images-guests {
+    max-width: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 64px;
+  }
+  .themes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 320px;
+  }
+  .themes .title {
+    margin-bottom: 37px;
+  }
+  .themes .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .themes .items .icon-themes {
+    margin-bottom: 13px;
+  }
+  .themes .items .description-themes {
+    font-family: "IBM Plex Sans", sans-serif;
+    margin-bottom: 55px;
+  }
+  .latest-news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 341px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    -webkit-clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+    max-width: 320px;
+  }
+  .latest-news .title-bgb {
+    margin-top: 64px;
+    margin-bottom: 36px;
+    width: 288px;
+  }
+  .latest-news .title-bgb h2 {
+    text-align: center;
+  }
+  .latest-news button {
+    margin: 0px 16px 67px 16px;
+    width: 288px;
+    height: 48px;
+    width: 288px;
+    height: 48px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 121px;
+    max-width: 320px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .copyright {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-family: "IBM Plex Mono", monospace;
+    color: #060A24;
+  }
+  .footer .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 214px;
+  }
+  .footer .icons i {
+    color: #060A24;
+    margin-bottom: 31px;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 321px) {
+  body {
+    /* width: 1440px;*/
+    max-width: 1440px;
+    width: 100vw;
+  }
+  button {
+    width: 226px;
+    height: 56px;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+    height: 80px;
+    margin-right: 0px;
+  }
+  header #btn-menu {
+    display: none;
+  }
+  header .bars-menu {
+    display: none;
+  }
+  header .close-menu {
+    display: none;
+  }
+  header .logo {
+    margin-left: 100px;
+  }
+  header .logo img {
+    width: 36px;
+    height: 36px;
+  }
+  header .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 100px;
+  }
+  header .menu ul a {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    margin-left: 48px;
+    margin-top: 26px;
+    text-decoration: none;
+  }
+  .presentation {
+    margin-left: 200px;
+    max-width: 1440px;
+  }
+  .presentation .title {
+    margin-top: 120px;
+  }
+  .presentation .title h1 {
+    display: inline;
+    font-size: 60px;
+  }
+  .presentation .title h1:last-child {
+    color: #0000EC;
+  }
+  .presentation .text {
+    width: 628px;
+    margin-bottom: 56px;
+  }
+  .presentation button {
+    margin-bottom: 5px;
+  }
+  .episodes {
+    max-width: 1440px;
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+            clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+    /* width: 100vw;*/
+    height: 1042.6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .episodes .title-bgb {
+    margin-top: 186px;
+    margin-left: 200px;
+    margin-bottom: 26px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .episodes .reproducers {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    gap: 72px;
+  }
+  .episodes .reproducers .player {
+    width: 584px;
+    height: 232px;
+  }
+  .episodes .reproducers #player-1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .episodes .reproducers #player-2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .episodes .reproducers #player-3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .episodes .reproducers #player-4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .wwcf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .wwcf img {
+    position: relative;
+    z-index: 99;
+    margin-top: -168.6px;
+    width: 457.6px;
+    height: 660px;
+    margin-left: 200px;
+    margin-right: 0px;
+  }
+  .wwcf #wwcf {
+    margin-top: 20.4px;
+    margin-bottom: 24px;
+    margin-left: 62.4px;
+  }
+  .wwcf .text {
+    width: 464px;
+    height: 204px;
+    margin-bottom: 245px;
+  }
+  .guests .title {
+    margin-left: 200px;
+    margin-top: 64px;
+    margin-bottom: 36px;
+  }
+  .guests img {
+    max-width: 480px;
+    height: 364px;
+  }
+  .guests .images-guests {
+    max-width: 1440px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 480px 480px 480px;
+        grid-template-columns: 480px 480px 480px;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 64px;
+  }
+  .guests #grace-hoper {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .guests #katie-bouman {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .guests #margaret-hamilton {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .guests #first-computer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .guests #computer-operators {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .guests #susan-kare {
+    -ms-grid-column: 3;
+    grid-column: 3/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .themes .title {
+    margin-left: 200px;
+    margin-top: 64px;
+    margin-bottom: 56px;
+  }
+  .themes .items-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    margin-left: 200px;
+    margin-right: 200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .themes .items-group .items {
+    margin-bottom: 34px;
+  }
+  .themes .items-group .items .icon-themes {
+    width: 260px;
+    height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .themes .items-group .items .icon-themes img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .themes .items-group .items .description-themes {
+    text-align: center;
+  }
+  .latest-news {
+    max-width: 1440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 518px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    -webkit-clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .latest-news #title-ln {
+    margin-top: 213px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .latest-news #button-ln {
+    margin-top: 36px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer {
+    max-width: 1440px;
+    height: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .footer .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 232px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer .icons i {
+    color: #060A24;
+  }
+}
+/*# sourceMappingURL=style.css.map */
